@@ -57,7 +57,7 @@ function activarTheme(colorPrimario)
 
 function actualizarcolor(colorprincipal) {
     // Guarda todos los elementos que coincidan
-    var elements = document.querySelectorAll(".bg-primary, .btn-primary, .alert-primary, .table-primary, .badge-primary, .btn-outline-primary, .bg-primarioTazul, .btn-primarioTazul, .alert-primarioTazul, .table-primarioTazul, .badge-primarioTazul, .btn-outline-primarioTazul, .bg-primarioTrojo, .btn-primarioTrojo, .alert-primarioTrojo, .table-primarioTrojo, .badge-primarioTrojo, .btn-outline-primarioTrojo, .bg-primarioTvioleta, .btn-primarioTvioleta, .alert-primarioTvioleta, .table-primarioTvioleta, .badge-primarioTvioleta, .btn-outline-primarioTvioleta");
+    var elements = document.querySelectorAll(".bg-primary, .btn-primary, .alert-primary, .table-primary, .badge-primary, .btn-outline-primary, .text-primary, .bg-primarioTazul, .btn-primarioTazul, .alert-primarioTazul, .table-primarioTazul, .badge-primarioTazul, .btn-outline-primarioTazul, .text-primarioTazul, .bg-primarioTrojo, .btn-primarioTrojo, .alert-primarioTrojo, .table-primarioTrojo, .badge-primarioTrojo, .btn-outline-primarioTrojo, .text-primarioTrojo, .bg-primarioTvioleta, .btn-primarioTvioleta, .alert-primarioTvioleta, .table-primarioTvioleta, .badge-primarioTvioleta, .btn-outline-primarioTvioleta, .text-primarioTvioleta");
     // Para cada elemento y su posile variación  se reemplaza la clase por la nueva
     elements.forEach(function(item) {
             if (item.classList.contains('bg-primarioTazul')) item.classList.replace('bg-primarioTazul','bg-'+colorprincipal);
@@ -66,6 +66,7 @@ function actualizarcolor(colorprincipal) {
             if (item.classList.contains('table-primarioTazul')) item.classList.replace('table-primarioTazul','table-'+colorprincipal);
             if (item.classList.contains('badge-primarioTazul')) item.classList.replace('badge-primarioTazul','badge-'+colorprincipal);
             if (item.classList.contains('btn-outline-primarioTazul')) item.classList.replace('btn-outline-primarioTazul','btn-outline-'+colorprincipal);
+            if (item.classList.contains('text-primarioTazul')) item.classList.replace('text-primarioTazul','text-'+colorprincipal);
         
             if (item.classList.contains('bg-primarioTrojo')) item.classList.replace('bg-primarioTrojo','bg-'+colorprincipal);
             if (item.classList.contains('btn-primarioTrojo')) item.classList.replace('btn-primarioTrojo','btn-'+colorprincipal);
@@ -73,6 +74,7 @@ function actualizarcolor(colorprincipal) {
             if (item.classList.contains('table-primarioTrojo')) item.classList.replace('table-primarioTrojo','table-'+colorprincipal);
             if (item.classList.contains('badge-primarioTrojo')) item.classList.replace('badge-primarioTrojo','badge-'+colorprincipal);
             if (item.classList.contains('btn-outline-primarioTrojo')) item.classList.replace('btn-outline-primarioTrojo','btn-outline-'+colorprincipal);
+            if (item.classList.contains('text-primarioTrojo')) item.classList.replace('text-primarioTrojo','text-'+colorprincipal);
         
             if (item.classList.contains('bg-primarioTvioleta')) item.classList.replace('bg-primarioTvioleta','bg-'+colorprincipal);
             if (item.classList.contains('btn-primarioTvioleta')) item.classList.replace('btn-primarioTvioleta','btn-'+colorprincipal);
@@ -80,6 +82,7 @@ function actualizarcolor(colorprincipal) {
             if (item.classList.contains('table-primarioTvioleta')) item.classList.replace('table-primarioTvioleta','table-'+colorprincipal);
             if (item.classList.contains('badge-primarioTvioleta')) item.classList.replace('badge-primarioTvioleta','badge-'+colorprincipal);
             if (item.classList.contains('btn-outline-primarioTvioleta')) item.classList.replace('btn-outline-primarioTvioleta','btn-outline-'+colorprincipal);
+            if (item.classList.contains('text-primarioTvioleta')) item.classList.replace('text-primarioTvioleta','text-'+colorprincipal);
         
             if (item.classList.contains('bg-primary')) item.classList.replace('bg-primary','bg-'+colorprincipal);
             if (item.classList.contains('btn-primary')) item.classList.replace('btn-primary','btn-'+colorprincipal);
@@ -87,5 +90,6 @@ function actualizarcolor(colorprincipal) {
             if (item.classList.contains('table-primary')) item.classList.replace('table-primary','table-'+colorprincipal);
             if (item.classList.contains('badge-primary')) item.classList.replace('badge-primary','badge-'+colorprincipal);
             if (item.classList.contains('btn-outline-primary')) item.classList.replace('btn-outline-primary','btn-outline-'+colorprincipal);
+            if (item.classList.contains('text-primary')) item.classList.replace('text-primary','text-'+colorprincipal);
     });
 }
