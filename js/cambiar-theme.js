@@ -16,6 +16,12 @@ document.getElementById('change-theme-btn').addEventListener('click', function (
 // Combrobando y añadiendo clase dark
 if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
     document.body.classList.add('dark');
+    if (document.body.classList.contains('dark')){
+        $(".card-body").toggleClass('bg-secondary');
+    }
+    else {
+        $(".card-body").removeClass('bg-secondary');
+    }
 }
 
 // Al hacer click en el boton "color-azul-btn" activa la función anterior "activarTheme" con el color azul

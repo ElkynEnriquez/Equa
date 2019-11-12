@@ -7,6 +7,17 @@
         
         <!-- titulo de página -->
         <title>Cojuntos númericos</title>
+        
+        <!-- ********************** Inicio codigo tema y cargar tema ******************* -->
+            <!-- Custom built theme - This already includes Bootstrap 4 -->
+            <link rel="stylesheet" href="../css/mytheme.min.css">
+            <script src="../js/cargar-theme.js"></script>
+        <script>
+            function init() {
+                comprobarTheme();
+            }
+        </script>
+        <!-- *************************** Final codigo tema y cargar tema ********************-->
 
         <!--************** Inicio Scripts Bootstrap y Cambio de tema ******************** -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -18,11 +29,6 @@
         <!-- incluimos iconos desde fontawesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha387-lZN37f5QGtY3VHgigisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     
-        <!-- ********************** Inicio codigo tema y cargar tema ******************* -->
-            <!-- Custom built theme - This already includes Bootstrap 4 -->
-            <link rel="stylesheet" href="../css/mytheme.min.css">
-            <script src="../js/cargar-theme.js"></script>
-        <!-- *************************** Final codigo tema y cargar tema ********************-->
 <style>
   body {
     position: relative;
@@ -39,7 +45,7 @@
 }
 </style>
 </head>
-<body style="margin:0px;"  data-spy="scroll">
+<body style="margin:0px;" onload="init();" data-spy="scroll">
     <nav class="navbar navbar-expand-lg navbar-light  bg-primary px-5 py-3">
       <!-- Default dropright button -->
         <div class="btn-group dropright">
@@ -106,18 +112,18 @@
                         </div>
                         <div class="w-100"></div>
                         <div class="col-5">
-                            <p class="lead">Son los que utilizamos en la vida cotidiana para contar u ordenar.</p>
+                            <p class="lead">Los utilizamos en la vida cotidiana para contar u ordenar.</p>
                         </div>
                           <div class="col-5">
-                            <p class="lead">El conjunto de los numeros naturales se representa por N y está formado por:</p>
+                            <p class="lead">El conjunto de los numeros naturales se representa por <i>N</i> y está formado por:</p>
                             <h5 class="card-title"><b>N</b>={ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ... }</h5>
                         </div>
                     </div>
                   </div>
-                  <div class="card-body p-4">
+                  <div class="card-body p-5">
                     <h5 class="card-title">Características</h5>
                       <p class="lead">* La suma y el producto de dos números naturales es otro número natural.</p>
-                    <p class="lead">* La diferencia de dos números naturales no siempre es un número natural, sólo ocurre cuando el minuendo es mayor que sustraendo.</p>
+                    <p class="lead">* La diferencia de dos números naturales no siempre es un número natural, sólo ocurre cuando el minuendo es mayor que el sustraendo.</p>
                     <hr class="my-4">
                         <h5 class="card-title">5 - 3 ϵ N </h5>
                         <h5 class="card-title">2 - 5 ∉ N </h5>
@@ -148,12 +154,12 @@
                             <p class="lead">Nos permiten expresar: el dinero adeudado, la temperatura bajo cero, las profundidades con respecto al nivel del mar, etc.</p>
                         </div>
                           <div class="col-5">
-                            <p class="lead">Los números enteros se representan con la letra Z y son del tipo:</p>
+                            <p class="lead">Los números enteros se representan con la letra <i>Z</i> y son del tipo:</p>
                             <h5 class="card-title"><b>Z</b>={..., −5, −4, −3, −2, −1, 0, 1, 2, 3, 4, 5, ...}</h5>
                         </div>
                       </div>
                      </div>
-                <div class="card-body p-4">
+                <div class="card-body p-5">
                     <h5 class="card-title">Características</h5>
                       <p class="lead">* La suma, la diferencia y el producto de dos números enteros es otro número entero.</p>
                     <p class="lead">* La raíz de un número entero no siempre es un número entero, sólo ocurre cuando la raíz es exacta o si se trata de una raíz de índice par con radicando positivo.</p>
@@ -179,22 +185,22 @@
                         </div>
                         <div class="w-100"></div>
                         <div class="col-5">
-                            <p class="lead">Ntodo número que puede representarse como el cociente de dos enteros, con denominador distinto de cero.</p>
+                            <p class="lead">Son todo número que puede representarse como el cociente de dos enteros, con denominador distinto de cero.</p>
                         </div>
                           <div class="col-5">
-                            <p class="lead">Los números enteros se representan con la letra Z y son del tipo:</p>
-                            <h5 class="card-title"><b>Z</b>={..., −5, −4, −3, −2, −1, 0, 1, 2, 3, 4, 5, ...}</h5>
+                            <p class="lead">Los números racionales se representan con la letra <i>Q</i> y son del tipo:</p>
+                            <h5 class="card-title"><b>Q</b>={a/b /a ∈ Z; b ∈ Z; b ≠ 0}</h5>
                         </div>
                       </div>
                      </div>
-                <div class="card-body p-4">
+                <div class="card-body p-5">
                     <h5 class="card-title">Características</h5>
                       <p class="lead">* Los números decimales (decimal exacto, periódico puro y periódico mixto) son números racionales; pero los números decimales ilimitados no.</p>
                     <p class="lead">* Podemos operar con potencias, pero el exponente tiene que ser un número entero.</p>
-                    <p class="lead">* La raíz de un número racional no siempre es un número racional, sólo ocurre cuando la raíz es exacta y si el índice es par el radicando ha de ser positivo.</p>
+                    <p class="lead">* La raíz de un número racional no siempre es un número racional, sólo ocurre cuando la raíz es exacta y si el índice es par, el radicando ha de ser positivo.</p>
                     <hr class="my-4">
-                        <h5 class="card-title">8 / 6 ∉ Z </h5>
-                        <h5 class="card-title">8 / 6 ∉ Z </h5>
+                        <h5 class="card-title">√-(4/5) ∉ Q </h5>
+                        <h5 class="card-title">√49 ∈ Q </h5>
                     <hr class="my-4">
                   </div>
                 </div>
@@ -215,12 +221,12 @@
                             <p class="lead">Un número es irracional si posee infinitas cifras decimales no periódicas, por tanto no se pueden expresar en forma de fracción.</p>
                         </div>
                           <div class="col-5">
-                            <p class="lead">Los números enteros se representan con la letra Z y son del tipo:</p>
-                            <h5 class="card-title"><b>Z</b>={..., −5, −4, −3, −2, −1, 0, 1, 2, 3, 4, 5, ...}</h5>
+                            <p class="lead">Los números irracionales se representan con la letra <i>I</i> y son del tipo:</p>
+                            <h5 class="card-title"><b>I</b>={..., π, e, φ, ...}</h5>
                         </div>
                       </div>
                      </div>
-                <div class="card-body p-4">
+                <div class="card-body p-5">
                     <h5 class="card-title">Características</h5>
                       <p class="lead">* El número irracional más conocido es π, que se define como la relación entre la longitud de la circunferencia y su diámetro.</p>
                       <hr class="my-4">
@@ -232,7 +238,7 @@
                     <hr class="my-4">
                     <p class="lead">* El número áureo, φ , utilizado por artistas de todas las épocas (Fidias, Leonardo da Vinci, Alberto Durero, Dalí,..) en las proporciones de sus obras.</p>
                     <hr class="my-4">
-                        <h5 class="card-title">φ = 2.718281828459... </h5>
+                        <h5 class="card-title">φ = 1.618033988749... </h5>
                     <hr class="my-4">
                   </div>
                 </div>
@@ -258,9 +264,14 @@
                         </div>
                       </div>
                      </div>
-                <div class="card-body p-4">
-                    <h5 class="card-title">Características</h5>
-                      <p class="lead">* El número irracional más conocido es π, que se define como la relación entre la longitud de la circunferencia y su diámetro.</p>
+                <div class="card-body p-5 align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="col-6 col-md-5">
+                        <img src="../img/conjuntos1.png" alt="Imagen numeros reales" width="100%">
+                        </div>
+                        <div class="w-100 py-3"></div>
+                      <p class="lead">Con los números reales podemos realizar todas las operaciones, excepto la radicación de índice par y radicando negativo, y la división por cero</p>
+                        <p class="lead">A todo número real le corresponde un punto en la recta númerica, y a todo punto de la recta un número real</p>
                   </div>
                 </div>
             </div> 

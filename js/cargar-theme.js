@@ -16,9 +16,12 @@ function comprobarTheme() {
 
 function limpiarClases ()
 {
-    document.body.classList.remove('themeazul');
-    document.body.classList.remove('themerojo');
-    document.body.classList.remove('themevioleta');
+    if (document.body.classList.contains('themeazul'))
+    {   document.body.classList.remove('themeazul');    }
+    if (document.body.classList.contains('themerojo')){
+        document.body.classList.remove('themerojo');}
+    if (document.body.classList.contains('themevioleta')){
+    document.body.classList.remove('themevioleta');}
 }
 
 // La función "activarTheme" recibe y almacena el color elegido de manera local para posteriormente comprobar y establecer cada color
