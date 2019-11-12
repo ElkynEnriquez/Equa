@@ -5,6 +5,12 @@
 document.getElementById('change-theme-btn').addEventListener('click', function () {
     let darkThemeEnabled = document.body.classList.toggle('dark');
     localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+    if (document.body.classList.contains('dark')){
+        $(".card-body").toggleClass('bg-secondary');
+    }
+    else {
+        $(".card-body").removeClass('bg-secondary');
+    }
 });
 
 // Combrobando y añadiendo clase dark
