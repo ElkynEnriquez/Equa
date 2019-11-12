@@ -1,5 +1,12 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
+body {
+  background-color: #ECEFF1;
+  color: #212529; }
+  body.dark {
+    background-color: #263238;
+    color: #fff; }
+
 .btn-primarioP1{
     padding-left: 20px;
     padding-right: 20px;
