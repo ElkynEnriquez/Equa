@@ -24,7 +24,7 @@
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- Fin jQuery, Popper.js y Bootstrap JS -->
         
         <!-- incluimos iconos desde fontawesome -->
@@ -80,6 +80,9 @@
           </li>
           <li class="nav-item pl-2">
             <a class="nav-link" data-scroll href="#reales">Reales</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" data-scroll href="#ejercicio-EC1">Ejercicios</a>
           </li>
         </ul>
       </div>
@@ -281,50 +284,51 @@
             </div>
         </div>
     </div>
-<!-- *************************      ejercicios        ****************** -->
+    
+    <!--    *****************  ejercicio 1 preguntas educaplay -->
+    <div class="container-fluid slider-n align-items-center justify-content-center text-white" style="background: #7cb139" id="ejercicio-EC1">
+        <div class="container h-100 pb-5">
+            <div class="row pt-md-5 pt-4 justify-content-center">
+                <div class="col-auto"></div>
+                <div class="col-xs-12 col-md-10">
+                    <h3>Práctiquemos lo aprendido</h3>
+                </div>
+                <div class="col-auto">1/2</div>
+            </div>
+            <div class="row py-4 py-md-3 py-lg-2 justify-content-center">
+                <div class="col-auto"></div>
+                <iframe width="795" height="600" frameborder="0" src="https://es.educaplay.com/es/recursoseducativos/4292268/html5/conjuntos_numericos.htm"></iframe>
+                <div class="col-auto"></div>
+            </div>
+            <button type='button' class='btn btn-success' data-scroll href="#ejercicios-conjuntos">Continuar con otro ejercicio</button>
+        </div>
+      </div>
+<!-- *************************    ejercicio 2    ****************** -->
     <div class="container-fluid slider-3 align-items-center justify-content-center text-white" id="ejercicios-conjuntos">
         <div class="container h-100">
             <div class="row pt-md-5 pt-4 justify-content-center">
-                <p id="aciertosEC">Aciertos</p>
+                <p id="aciertosEC">Aciertos 0/15</p>
                 <div class="w-100"></div>
                 <div class="col-auto"></div>
                 <div class="col-xs-12 col-md-10">
                     <h2>Velocidad en pensamiento numérico</h2>
                 </div>
-                <div class="col-auto"></div>
-                <!-- Modal instrucciones-->
-                <div class="modal fade" id="instrucciones-conjuntos" tabindex="-1" role="dialog" aria-labelledby="instrucciones-conjuntosTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header text-primary">
-                        <h4 class="modal-title text-primarioTazul" id="instrucciones-conjuntosTitle">Instrucciones:</h4>
-                      </div>
-                      <div class="modal-body text-dark" style="text-align: left;">
-                          Debes recordar el símbolo actual y contestar si coincide con el anterior.<br>
-                          Responde rápidamente y evita cometer errores.
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primarioTazul" data-dismiss="modal" id="comenzar-conjuntos">Entiendo</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal -->
+                <div class="col-auto">2/2</div>
             </div>
             <div class="row pt-4 pt-md-2 pt-lg-1 justify-content-center">
                 <div class="col-auto"></div>
-                <div class="col-10 col-md-8 col-lg-6 py-4">
+                <div class="col-12 col-md-10 col-lg-8 py-4">
                     <!-- aqui tarjetas -->
                     <div class="card bg-light text-dark">
+                        <div class="card-header text-primarioTrojo" id="cardInfo">
+                            <h5>Contesta falso o verdadero a las siguientes afirmaciones, hasta completar 15 aciertos</h5>
+                        </div>
                         <div class="card-body pb-5">
-                            <h5 class="card-title display-3" id="ejemploTarjeta">38</h5>
+                            <h5 class="card-title pt-3">El número</h5>
+                            <h5 class="display-4 pb-2 text-primarioTazul" id="ejemploTarjeta">38</h5>
                             <h4 class="card-text" id="preguntaTarjeta">¿Pertenece a los números naturales?</h4>
                         </div>
                     </div>
-                    
-                    <img src="recursos/simbolo2.svg" width="100%" id="tarjeta2" data-valor="2" style="display: none">
-                    <img src="recursos/simbolo3.svg" width="100%" id="tarjeta3" data-valor="3" style="display: none">
-                    <img src="recursos/simbolo4.svg" width="100%" id="tarjeta4" data-valor="4" style="display: none">
                 </div>
                 <div class="col-auto"></div>
             </div>
@@ -347,18 +351,18 @@
                 <!-- Position it -->
                 <div style=" top: 0; right: 0;">
                     <!-- Toast - notificación siguiente nivel -->
-                    <div id="tBienEC" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay= "400" style="min-width: 100%;">
+                    <div id="tBienEC" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay= "1500" style="min-width: 100%;">
                         <div class="toast-header px-3 px-md-4">
-                            <img src="recursos/bien.svg" alt="Bien" style="height: 50px;">
-                            <strong class="mr-auto ml-3">Correcto</strong>
+                            <img src="../img/bien.svg" alt="Bien" style="height: 50px;">
+                            <strong class="mr-auto ml-3" id="bienText">Correcto</strong>
                         </div>
                     </div>
                     <!-- FINAL Toast - notificación siguiente nivel -->
                     <!-- Toast - notificación GameOver -->
-                    <div id="tMalEC" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay= "400" style="min-width: 100%;">
+                    <div id="tMalEC" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay= "1500" style="min-width: 100%;">
                         <div class="toast-header px-3 px-md-4">
-                            <img src="recursos/error.svg" alt="Mal" style="height: 50px;">
-                            <strong class="mr-auto ml-3">Error</strong>
+                            <img src="../img/error.svg" alt="Mal" style="height: 50px;">
+                            <strong class="mr-auto ml-3" id="malText">Error</strong>
                         </div>
                     </div>
                     <!-- FINAL Toast - notificación GameOver -->
@@ -368,7 +372,7 @@
             </div>
             <div class="row pb-3 justify-content-center" id="finConjuntos">
                 <div class="col-12 mb-5" style="margin-top: -100px;">
-                    <h4> Juego terminado</h4>
+                    <h4>Terminaste</h4>
                     <p id="puntuacionEC">Tuviste   aciertos de   posibles</p>
                     <!--a href="#sec-5" class="continuar-test btn btn-primarioTazul text-white" role="button" aria-pressed="true">Continuar Test</a -->
                 </div>
@@ -376,19 +380,22 @@
         </div>
       </div>
     
-    
     <script src="../js/cambiar-theme.js"></script>
     
 <!-- ****************** Final Scripts Bootstrap y Cambio de tema ******************** -->
 <script>
-        var aciertos=10;
+        var aciertos=0;
+        var intentos=0;
+        var conjNum;
+        var pregNum;
+        var numElegido=1;
+        var numRacional=[0.5,1,2];
+        var arrPreguntas=["Pertenece a los números naturales","Pertenece al conjunto de números enteros","Es un número racional","Es del conjunto de los números irracionales","Se encuentra en el conjunto de los números reales"];
+    
         $(document).ready(function(){
-                $('#aciertosEC').html("Aciertos: " + aciertos);
+                $('#aciertosEC').html("Aciertos: " + aciertos+"/15");
                 $('#finConjuntos').hide();
             });
-        $('#ejercicios-conjuntos').focusin(function(){
-            $('#instrucciones-conjuntos').modal('show');
-        });
     
         function numeroNatural () {
             return (Math.floor((Math.random() * 100) + 1));
@@ -400,19 +407,102 @@
             let numZ=numeroEntero();
             let numN=numeroNatural();
             let numQ=numZ/numN;
-            return(numQ, numZ, numN);
+            let arrRacional=[numQ,numZ,numN];
+            return(arrRacional);
         }
         function numeroIrracional () {
             let numI=["e", "&radic;7", "&radic;2", "&radic;99", "&pi;", "&phi;"];
             let indiceI=Math.floor((Math.random() * (numI.length-1)) + 1);
-            //alert("indice "+indiceI+"leng "+(numI.length-1));
             return (numI[indiceI]);
         }
+        function generarAleatorio () {
+            conjNum=Math.floor((Math.random() * 4) + 1);
+            switch (conjNum) {
+                case 1:
+                    numElegido=numeroNatural();
+                    break;
+                case 2:
+                    numElegido=numeroEntero();
+                    break;
+                case 3:
+                    numRacional=numeroRacional();
+                    break;
+                case 4:
+                    numElegido=numeroIrracional();
+                    break;
+            }
+            if (conjNum==3){
+                if (Math.floor((Math.random() * 2) + 1)==1)
+                    $("#ejemploTarjeta").html(numRacional[1]+"/"+numRacional[2]);
+                else 
+                    $("#ejemploTarjeta").html(numRacional[0]);
+            }
+            else
+                $("#ejemploTarjeta").html(numElegido);
+            pregNum=Math.floor((Math.random() * arrPreguntas.length) + 1)-1;
+            $("#preguntaTarjeta").html(arrPreguntas[pregNum]);
+        }
         
-        var numeroElegido=Math.floor((Math.random() * 5) + 1));
-        var preguntas=["¿prtenece a los naturales"]
-        $("#ejemploTarjeta").html("Numero: "+numeroIrracional());
+        $('#btn-comenzar').on('click', function(e){
+                $(this).hide();
+                $("#cardInfo").hide();
+                $('#btn-verdaderoEC, #btn-falsoEC').show();
+                generarAleatorio();
+        });
     
+        $('#btn-verdaderoEC, #btn-falsoEC').on('click',function(e){
+                intentos++;
+                var boton=$(this).attr('id');
+                if (conjNum==(pregNum+1) && boton=="btn-verdaderoEC"){
+                    aciertos++;
+                    $('#tBienEC').toast('show');
+                }
+                else if (conjNum==2 && (pregNum+1)==1 && numElegido>0 && 
+                //numeros enteros positivos son naturales
+                    boton=="btn-verdaderoEC"){
+                    aciertos++;
+                    $('#tBienEC').toast('show');
+                }
+                else if (conjNum==1 && (pregNum+1)==2 && boton=="btn-verdaderoEC"){
+                //numeros naturales son enteros
+                    aciertos++;
+                    $('#tBienEC').toast('show');
+                }
+                else if (conjNum==1 && (pregNum+1)==2 && boton=="btn-falsoEC"){
+                //numeros naturales son enteros
+                    $('#tMalEC').toast('show');
+                }
+                else if ((conjNum==1 || conjNum==2) && (pregNum+1)==3 && boton=="btn-verdaderoEC"){
+                //numeros naturales y enteros son racionales
+                    aciertos++;
+                    $('#bienText').html("Correcto de la forma "+numElegido+"/1");
+                    $('#tBienEC').toast('show');
+                }
+                else if((conjNum==1 || conjNum==2) && (pregNum+1)==3 && boton=="btn-falsoEC") {
+                    $('#tMalEC').toast('show');
+                }
+                else if ((pregNum+1)==5 && boton=="btn-verdaderoEC"){
+                    //todos los numeros son reales
+                    aciertos++;
+                    $('#tBienEC').toast('show');
+                }
+                else if(conjNum!=(pregNum+1) && boton=="btn-falsoEC" && (pregNum+1)!=5) {
+                    aciertos++;
+                    $('#tBienEC').toast('show');
+                }
+                else
+                    $('#tMalEC').toast('show');
+            
+                $("#aciertosEC").html("Aciertos "+aciertos+"/15");
+                if (aciertos<15)
+                    generarAleatorio();
+                else {
+                    $('#btn-verdaderoEC, #btn-falsoEC').hide();
+                    $("#puntuacionEC").html("Tuviste 15 aciertos en "+intentos+" intentos");
+                    $("#finConjuntos").show();
+                }
+                    
+        });    
         
         $(".nav-link").css("color","rgba(255,255,255,0.9)");
         
