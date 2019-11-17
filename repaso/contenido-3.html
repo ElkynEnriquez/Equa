@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <!-- titulo de página -->
-        <title>Potenciación y radicación</title>
+        <title>Operaciones con racionales</title>
         
         <!-- ********************** Inicio codigo tema y cargar tema ******************* -->
             <!-- Custom built theme - This already includes Bootstrap 4 
@@ -66,10 +66,10 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item pl-2">
-            <a class="nav-link" data-scroll href="#reales">Operaciones con números racionales</a>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#operaciones-racionales">Operaciones con números racionales</a>
           </li>
-          <li class="nav-item pl-2">
+          <li class="nav-item px-2">
             <a class="nav-link" data-scroll href="#ejercicio-EC1">Ejercicios</a>
           </li>
         </ul>
@@ -79,7 +79,7 @@
         <div class="row justify-content-center align-items-center py-5">
               <div class="row py-3 justify-content-center">
                 <div class="col-md-10 col-12">
-                 <div id="operacionesracionales" class="py-3">         
+                 <div id="operaciones-racionales" class="py-3">         
                 <div class="card">
                   <div class="card-header bg-primary text-white align-center">
                       <div class="row justify-content-center py-3">
@@ -95,7 +95,7 @@
                             <p class="lead"> Tiene la forma  <img src="../img/asobreb.png" alt="Imagen numeros asobreb" width="10%">, donde a y b son números enteros, pero b tiene que ser diferente de cero.</p>
                         </div>
                           <div class="col-6 col-md-4">
-                       <p class="lead">Hay que tener en cuenta que para operar dos números racionales, se debe emplear la misma representación para ambos.</p>
+                       <p class="lead">Hay que tener en cuenta que para operar dos números racionales, se debe emplear la misma forma a/b para ambos.</p>
                         </div>
                         </div>
                       </div>   
@@ -167,217 +167,19 @@
                 <div class="col-xs-12 col-md-10">
                     <h3>Práctiquemos lo aprendido</h3>
                 </div>
-                <div class="col-auto">1/2</div>
+                <div class="col-auto"></div>
             </div>
             <div class="row py-4 py-md-3 py-lg-2 justify-content-center">
                 <div class="col-auto"></div>
-                <iframe width="795" height="600" frameborder="0" src="https://es.educaplay.com/es/recursoseducativos/4292268/html5/conjuntos_numericos.htm"></iframe>
+                <iframe width="795" height="600" frameborder="0" src="https://es.educaplay.com/es/recursoseducativos/4971435/html5/operaciones_numeros_racionales.htm"></iframe>
                 <div class="col-auto"></div>
-            </div>
-            <button type='button' class='btn btn-success' data-scroll href="#ejercicios-conjuntos">Continuar con otro ejercicio</button>
-        </div>
-      </div>
-<!-- *************************    ejercicio 2    ****************** -->
-    <div class="container-fluid slider-3 align-items-center justify-content-center text-white" id="ejercicios-conjuntos">
-        <div class="container h-100">
-            <div class="row pt-md-5 pt-4 justify-content-center">
-                <p id="aciertosEC">Aciertos 0/15</p>
-                <div class="w-100"></div>
-                <div class="col-auto"></div>
-                <div class="col-xs-12 col-md-10">
-                    <h2>Velocidad en pensamiento numérico</h2>
-                </div>
-                <div class="col-auto">2/2</div>
-            </div>
-            <div class="row pt-4 pt-md-2 pt-lg-1 justify-content-center">
-                <div class="col-auto"></div>
-                <div class="col-12 col-md-10 col-lg-8 py-4">
-                    <!-- aqui tarjetas -->
-                    <div class="card bg-light text-dark">
-                        <div class="card-header text-primarioTrojo" id="cardInfo">
-                            <h5>Contesta falso o verdadero a las siguientes afirmaciones, hasta completar 15 aciertos</h5>
-                        </div>
-                        <div class="card-body pb-5">
-                            <h5 class="card-title pt-3">El número</h5>
-                            <h5 class="display-4 pb-2 text-primarioTazul" id="ejemploTarjeta">38</h5>
-                            <h4 class="card-text" id="preguntaTarjeta">¿Pertenece a los números naturales?</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto"></div>
-            </div>
-            <div class="row pb-3 justify-content-center" id="controles">
-                <button type='button' class='btn btn-primarioTazul' id='btn-comenzar' >Comenzar</button>
-                <div class="w-100"></div>
-                <div class="col-auto"></div>
-                <div class="col-5 col-md-3 col-lg-2">
-                    <button type='button' class='btn btn-primarioTazul' id='btn-verdaderoEC' style="width: 100%; display: none"> Verdadero</button>
-                </div>
-                <div class="col-5 col-md-3 col-lg-2">
-                    <button type='button' class='btn btn-primarioTazul' id='btn-falsoEC' style="width: 100%; display: none"> Falso</button>
-                </div>
-                <div class="col-auto"></div>
-            </div>
-            <div class="row justify-content-center" id="divResultadosEC">
-            <div class="col-12">
-            <!-- Flexbox container for aligning the toasts -->
-            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="position: relative; min-height: 100px;">
-                <!-- Position it -->
-                <div style=" top: 0; right: 0;">
-                    <!-- Toast - notificación siguiente nivel -->
-                    <div id="tBienEC" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay= "1500" style="min-width: 100%;">
-                        <div class="toast-header px-3 px-md-4">
-                            <img src="../img/bien.svg" alt="Bien" style="height: 50px;">
-                            <strong class="mr-auto ml-3" id="bienText">Correcto</strong>
-                        </div>
-                    </div>
-                    <!-- FINAL Toast - notificación siguiente nivel -->
-                    <!-- Toast - notificación GameOver -->
-                    <div id="tMalEC" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay= "1500" style="min-width: 100%;">
-                        <div class="toast-header px-3 px-md-4">
-                            <img src="../img/error.svg" alt="Mal" style="height: 50px;">
-                            <strong class="mr-auto ml-3" id="malText">Error</strong>
-                        </div>
-                    </div>
-                    <!-- FINAL Toast - notificación GameOver -->
-                </div>
-            </div>
-            </div>
-            </div>
-            <div class="row pb-3 justify-content-center" id="finConjuntos">
-                <div class="col-12 mb-5" style="margin-top: -100px;">
-                    <h4>Terminaste</h4>
-                    <p id="puntuacionEC">Tuviste   aciertos de   posibles</p>
-                    <!--a href="#sec-5" class="continuar-test btn btn-primarioTazul text-white" role="button" aria-pressed="true">Continuar Test</a -->
-                </div>
             </div>
         </div>
       </div>
     
     <script src="../js/cambiar-theme.js"></script>
     
-<!-- ****************** Final Scripts Bootstrap y Cambio de tema ******************** -->
-<script>
-        var aciertos=0;
-        var intentos=0;
-        var conjNum;
-        var pregNum;
-        var numElegido=1;
-        var numRacional=[0.5,1,2];
-        var arrPreguntas=["Pertenece a los números naturales","Pertenece al conjunto de números enteros","Es un número racional","Es del conjunto de los números irracionales","Se encuentra en el conjunto de los números reales"];
-    
-        $(document).ready(function(){
-                $('#aciertosEC').html("Aciertos: " + aciertos+"/15");
-                $('#finConjuntos').hide();
-            });
-    
-        function numeroNatural () {
-            return (Math.floor((Math.random() * 100) + 1));
-        }
-        function numeroEntero () {
-            return (Math.floor(((Math.random() * 100) + 1)-((Math.random() * 100) + 1)));
-        }
-        function numeroRacional () {
-            let numZ=numeroEntero();
-            let numN=numeroNatural();
-            let numQ=numZ/numN;
-            let arrRacional=[numQ,numZ,numN];
-            return(arrRacional);
-        }
-        function numeroIrracional () {
-            let numI=["e", "&radic;7", "&radic;2", "&radic;99", "&pi;", "&phi;"];
-            let indiceI=Math.floor((Math.random() * (numI.length-1)) + 1);
-            return (numI[indiceI]);
-        }
-        function generarAleatorio () {
-            conjNum=Math.floor((Math.random() * 4) + 1);
-            switch (conjNum) {
-                case 1:
-                    numElegido=numeroNatural();
-                    break;
-                case 2:
-                    numElegido=numeroEntero();
-                    break;
-                case 3:
-                    numRacional=numeroRacional();
-                    break;
-                case 4:
-                    numElegido=numeroIrracional();
-                    break;
-            }
-            if (conjNum==3){
-                if (Math.floor((Math.random() * 2) + 1)==1)
-                    $("#ejemploTarjeta").html(numRacional[1]+"/"+numRacional[2]);
-                else 
-                    $("#ejemploTarjeta").html(numRacional[0]);
-            }
-            else
-                $("#ejemploTarjeta").html(numElegido);
-            pregNum=Math.floor((Math.random() * arrPreguntas.length) + 1)-1;
-            $("#preguntaTarjeta").html(arrPreguntas[pregNum]);
-        }
-        
-        $('#btn-comenzar').on('click', function(e){
-                $(this).hide();
-                $("#cardInfo").hide();
-                $('#btn-verdaderoEC, #btn-falsoEC').show();
-                generarAleatorio();
-        });
-    
-        $('#btn-verdaderoEC, #btn-falsoEC').on('click',function(e){
-                intentos++;
-                var boton=$(this).attr('id');
-                if (conjNum==(pregNum+1) && boton=="btn-verdaderoEC"){
-                    aciertos++;
-                    $('#tBienEC').toast('show');
-                }
-                else if (conjNum==2 && (pregNum+1)==1 && numElegido>0 && 
-                //numeros enteros positivos son naturales
-                    boton=="btn-verdaderoEC"){
-                    aciertos++;
-                    $('#tBienEC').toast('show');
-                }
-                else if (conjNum==1 && (pregNum+1)==2 && boton=="btn-verdaderoEC"){
-                //numeros naturales son enteros
-                    aciertos++;
-                    $('#tBienEC').toast('show');
-                }
-                else if (conjNum==1 && (pregNum+1)==2 && boton=="btn-falsoEC"){
-                //numeros naturales son enteros
-                    $('#tMalEC').toast('show');
-                }
-                else if ((conjNum==1 || conjNum==2) && (pregNum+1)==3 && boton=="btn-verdaderoEC"){
-                //numeros naturales y enteros son racionales
-                    aciertos++;
-                    $('#bienText').html("Correcto de la forma "+numElegido+"/1");
-                    $('#tBienEC').toast('show');
-                }
-                else if((conjNum==1 || conjNum==2) && (pregNum+1)==3 && boton=="btn-falsoEC") {
-                    $('#tMalEC').toast('show');
-                }
-                else if ((pregNum+1)==5 && boton=="btn-verdaderoEC"){
-                    //todos los numeros son reales
-                    aciertos++;
-                    $('#tBienEC').toast('show');
-                }
-                else if(conjNum!=(pregNum+1) && boton=="btn-falsoEC" && (pregNum+1)!=5) {
-                    aciertos++;
-                    $('#tBienEC').toast('show');
-                }
-                else
-                    $('#tMalEC').toast('show');
-            
-                $("#aciertosEC").html("Aciertos "+aciertos+"/15");
-                if (aciertos<15)
-                    generarAleatorio();
-                else {
-                    $('#btn-verdaderoEC, #btn-falsoEC').hide();
-                    $("#puntuacionEC").html("Tuviste 15 aciertos en "+intentos+" intentos");
-                    $("#finConjuntos").show();
-                }
-                    
-        });    
-        
+    <script>
         $(".nav-link").css("color","rgba(255,255,255,0.9)");
         
         $('[data-scroll]').on('click', function(e){
