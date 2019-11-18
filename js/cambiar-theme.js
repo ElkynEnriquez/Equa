@@ -7,9 +7,11 @@ document.getElementById('change-theme-btn').addEventListener('click', function (
     localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
     if (document.body.classList.contains('dark')){
         $(".card-body").toggleClass('bg-secondary');
+        $(".card-body").toggleClass('text-white');
     }
     else {
         $(".card-body").removeClass('bg-secondary');
+        $(".card-body").removeClass('text-white');
     }
 });
 
@@ -18,9 +20,11 @@ if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
     document.body.classList.add('dark');
     if (document.body.classList.contains('dark')){
         $(".card-body").toggleClass('bg-secondary');
+        $(".card-body").toggleClass('text-white');
     }
     else {
         $(".card-body").removeClass('bg-secondary');
+        $(".card-body").removeClass('text-white');
     }
 }
 
