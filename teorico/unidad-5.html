@@ -67,13 +67,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active px-2">
-            <a class="nav-link active" data-scroll href="#unasolavariable">Polinomios de una sóla variable</a>
+            <a class="nav-link active" data-scroll href="#unasolavariable">Cocientes notables</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" data-scroll href="#binomios">Binomios</a>
+            <a class="nav-link" data-scroll href="#binomios">Teorema del residuo</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" data-scroll href="#op_polinomios">Operciones con Polinomios</a>
+            <a class="nav-link" data-scroll href="#op_polinomios">Factorización</a>
           </li>
         </ul>
       </div>
@@ -111,12 +111,10 @@
                     </div>
                   </div>
                   <div class="card-body p-5">
-                        <div class="row justify-content-center py-3">
-                        
-                        <img src="../img/cocientesnotables.png" alt="Imagen polinomios una sola variable" width="60%">
-                         
-                        </div>
-
+                        <p class="lead pb-3">Son aquellas divisiones exactas, es decir, de residuo cero que se puede obtener de forma directa sin resolver o realizar ningún tipo de división algebraica.
+                        Una división exacta es cuando su residuo es cero y tiene la forma general:</p>
+                        <p class="lead pb-3 text-center" style="font-size: 2rem"> P(x) / Q(x) </p>
+                        <p class="lead pb-3">La división no existe cuando <i>x=a,</i> pero si se toma este valor, podemos hallar el residuo de dicha división, sin necesidad de realizar ningún método, tan solo remplazamos este valor en <i>p(x)</i> y obtenemos el residuo <i>R = p(a)</i>.</p>
                         <hr class="my-4">
                         <p class="lead pb-3"><i>Ejemplo:</i></p>
                         <img src="../img/ejemplococientes1.png" alt="Imagen cocientes" width="10%">
@@ -124,6 +122,7 @@
                         <h5 class="card-title">D(x) = x<sup>8</sup> + a<sup>8</sup></h5>
                         <p class="lead pb-3"><i>El residuo es:</i></p>
                         <h5 class="card-title">R = a<sup>8</sup> + a<sup>8</sup> = 2a<sup>8</sup></h5>
+                        <a target ="_blank"href="https://ejemplosyejerciciosde.blogspot.com/2014/08/cocientes-notables.html">Click aquí, para profundizar sobre cocientes notables </a>
                   </div>
                 </div>
             </div>
@@ -138,14 +137,11 @@
                       </div>
                      </div>
                      <div class="card-body p-5">
-                     <div class="row justify-content-center py-3">
-                        <img src="../img/teoremadelresiduo.png" alt="Imagen residuo" width="60%">  
-                      </div>
-                      <hr class="my-4">
-                        <p class="lead pb-3"><i>Ejemplo: </i></p>
-                        <h5 class="card-title">(x + 1)<sup>2</sup></h5>
-                        <h5 class="card-title">= x<sup>2</sup> + 1<sup>2</sup> + 2 * x * 1 </h5>
-                        <h5 class="card-title">x<sup>2</sup> + 2x + 1</h5>
+                     <p class="lead pb-3">El teorema del resto (o teorema del residuo) afirma que si dividimos un Polinomio P(x) por otro polinomio de primer grado de la forma  <i>x - a</i> el residuo resulta ser <i>R = p(a)</i>.</p>
+                        <p class="lead pb-3">La división no existe cuando <i>x=a,</i> pero si se toma este valor, podemos hallar el residuo de dicha división, sin necesidad de realizar ningún método, tan solo remplazamos este valor en <i>p(x)</i> y obtenemos el residuo <i>R = p(a)</i>.</p>
+                    <div class="row justify-content-center py-3">
+                        <img src="../img/cocientesnotables1.png" alt="Imagen cocientesnotables" width="20%">  
+                        </div>
                       </div>
             </div>
             </div> 
@@ -161,9 +157,10 @@
                       </div>
                      </div>
                      <div class="card-body p-5">
-                     <div class="row justify-content-center py-3">
-                        <img src="../img/factorizacion.png" alt="Imagen factorizacion" width="70%">  
-                        </div>
+                     <p class="lead pb-3">Método a través del cual un polinomio se expresa en forma de multiplicación de factores, que pueden ser números, letras o ambos. Para factorizar se agrupan los factores que son comunes a los términos, y de esa forma se va descomponiendo el polinomio en varios polinomios.</p>
+                     <p class="lead pb-3">La factorización es un método muy útil cuando se tienen expresiones algebraicas, porque se puede convertir en la multiplicación de varios términos sencillos.</p>
+                     <p class="lead pb-3"><i>Ejemplo:</i></p>
+                     <p class="lead pb-3">2a <sup>2</sup> + 2ab=2a * (a + b)</p>
                       </div>
             </div>
             </div> 
@@ -190,7 +187,20 @@
             </div>
         </div>
       </div>
-    -->
+ <!--    *****************  final actividad -->
+    <div class="container-fluid slider-n bg-primary align-items-center justify-content-center text-white" id="fin-actividad">
+        <div class="container h-100 pb-5">
+            <div class="row mr-md-n5 mr-3 pt-4 pt-md-3 pt-lg-2 justify-content-end">
+                <div class="col-6 col-md-4 col-lg-3" style="text-align:right;"><img src="../img/fin-actividad.png" alt="marcar final de actividad" width="100%"></div>
+            </div>
+            <div class="row mt-md-n2 pb-md-5 pb-4 justify-content-center">
+                <div class="col-xs-12 col-md-10">
+                    <h3 class="display-4">Muy bien, terminaste</h3>
+                    <h5>Recuerda, marcar la actividad como finalizada</h5>
+                </div>
+            </div>
+        </div>
+      </div>
     <script src="../js/cambiar-theme.js"></script>
     <script>
         $(".nav-link").css("color","rgba(255,255,255,0.9)");
