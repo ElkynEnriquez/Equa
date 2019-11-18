@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Etiquetas <meta> obligatorias para Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- titulo de página -->
+        <title>Unidad 3</title>
+        
+        <!-- ********************** Inicio codigo tema y cargar tema ******************* -->
+            <!-- Custom built theme - This already includes Bootstrap 4 
+            <link rel="stylesheet" href="../css/mytheme.min.css"> -->
+            <link rel="stylesheet" href="../css/tema-tesis.min.css">
+            <script src="../js/cargar-theme.js"></script>
+        <script>
+            function init() {
+                comprobarTheme();
+            }
+        </script>
+        <!-- *************************** Final codigo tema y cargar tema ********************-->
+
+        <!--************** Inicio Scripts Bootstrap y Cambio de tema ******************** -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <!-- Fin jQuery, Popper.js y Bootstrap JS -->
+        
+        <!-- incluimos iconos desde fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha387-lZN37f5QGtY3VHgigisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+<style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color:rgba(33,33,33,0.5);
+}
+</style>
+</head>
+<body style="margin:0px;" onload="init();" data-spy="scroll">
+    <nav class="navbar navbar-expand-lg navbar-light  bg-primary px-5 py-3">
+      <!-- Default dropright button -->
+        <div class="btn-group dropright">
+          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 30px;">
+            <i class="fa fa-palette text-primary px-2" style="font-size:24px;"></i>
+          </button>
+          <div class="dropdown-menu bg-primary">
+            <!-- Dropdown menu links -->
+                <a class="nav-link" id="change-theme-btn" href="#dark">Modo dark</a>
+                <a class="nav-link" id="color-azul-btn" href="#tema-azul">Azul</a>
+                <a class="nav-link" id="color-rojo-btn" href="#tema-rojo">Rojo</a>
+                <a class="nav-link" id="color-violeta-btn" href="#tema-violeta">Violeta</a>
+          </div>
+        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active px-2">
+            <a class="nav-link active" data-scroll href="#adicion">Adición y Sustracción</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#multiplicacion">Multiplicación</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#division">División</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#radicacion">Radicación</a>
+          </li>
+           <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#potencia">Potenciación</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#ejercicio-EC1">Ejercicios</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center py-5">
+            <div class="col-10 col-md-5 py-5">
+                <h1 class="display-4 text-primary pb-3">Unidad 3: Operaciones con monomios</h1>
+                <p>Monomio es una expresión algebraica en la que se utilizan exponentes naturales de variables literales que constan de un solo término, un número llamado coeficiente</p>
+            </div>
+            <div class="w-100 d-md-none d-block"></div>
+            <div class="col-9 col-md-4 pt-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                   <video width="320" height="240" autoplay="true" loop muted>
+                      <source src="../img/personajes/estilo-teorico.mp4" type="video/mp4">
+                        Video personaje reflexivo, no soportado
+                    </video>
+                </div>
+                <p class="small text-center">Estilo teórico</p>
+            </div>
+        </div>
+        <div class="row py-3 justify-content-center">
+        <div class="col-md-10 col-12">
+            <div id="adicion" class="py-3">
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2,3 rem; font-weight:300;">Adición y Sustracción</h2>
+                        </div>
+                        <div class="w-100"></div>
+                    </div>
+                  </div>
+                  <div class="card-body p-5">
+                    <p class="lead pb-3">Para poder sumar o restar dos o más monomios estos han de ser monomios semejantes, es decir, monomios que tienen la misma parte literal</p>
+                    <p class="lead pb-3 text-center" style="font-size: 2rem"><i>a<b class="text-success">x<sup>n</sup></b>+b<b class="text-success">x<sup>n</sup></b>=(a+b)<b class="text-success">x<sup>n</sup></b></i></p>
+                    <p class="lead pb-3 text-center" style="font-size: 2rem"><i>a<b class="text-warning">x<sup>n</sup></b>+b<b class="text-warning">x<sup>n</sup></b>=(a-b)<b class="text-warning">x<sup>n</sup></b></i></p><br>
+                    <p class="lead pb-3">Si los monomios no son semejantes, al sumarlos o restarlos, se obtiene un polinomio.</p>
+                    <p class="lead pb-3 text-center" style="font-size: 2rem">2x²y³ + 3x²y³z</p>
+                        <hr class="my-4">
+                        <p class="lead pb-3"><i>Ejemplo1: </i></p>
+                        <h5 class="card-title">2x<sup>2</sup>y<sup>3</sup>z + 3x<sup>2</sup>y<sup>3</sup>z  </h5>
+                        <h5 class="card-title">= (2 + 3)x<sup>2</sup>y<sup>3</sup>z</h5>
+                        <h5 class="card-title">5x<sup>2</sup>y<sup>3</sup>z</h5><br>
+                        <p class="lead pb-3"><i>Ejemplo2: </i></p>
+                        <h5 class="card-title">4x − 5x − 3x + 2x   </h5>
+                        <h5 class="card-title">= (4 - 5 - 3 + 2)x</h5>
+                        <h5 class="card-title">−2x</h5>
+                  </div>
+                </div>
+            </div>
+            <div id="multiplicacion" class="py-3"> 
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2,3 rem; font-weight:300;">Multiplicación</h2>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="card-body p-5">
+                     <p class="lead pb-3">La multiplicación de monomios es otro monomio que tiene por coeficiente el producto de los coeficientes y cuya parte literal se obtiene multiplicando las potencias que tengan la misma base, es decir, sumando los exponentes.</p>
+                    <p class="lead pb-3 text-center" style="font-size: 2rem"><i>a<b class="text-success">x<sup>n</sup></b> * b<b class="text-success">x<sup>m</sup></b>=(a * b)<b class="text-success">x<sup>n+m</sup></b></i></p>
+                        <hr class="my-4">
+                        <p class="lead pb-3"><i>Ejemplo: </i></p>
+                        <h5 class="card-title">(5x<sup>2</sup> y³ z) · (2y² z²)</h5>
+                        <h5 class="card-title">= (2 · 5) x² y³ + y² + z + z²</h5>
+                        <h5 class="card-title">10 x² y<sup>5</sup> z³</h5>
+                      </div>
+            </div>
+            </div> 
+            <div id="division" class="py-3"> 
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2,3 rem; font-weight:300;">División</h2>
+                        </div>
+                        <div class="w-100"></div>
+                      </div>
+                     </div>
+                     <div class="card-body p-5">
+                     <p class="lead pb-3">Sólo se pueden dividir monomios cuando el grado del dividendo es mayor o igual que el del divisor </p>
+                     <p class="lead pb-3">La división de monomios es otro monomio que tiene por coeficiente el cociente de los coeficientes y cuya parte literal se obtiene dividiendo las potencias que tengan la misma base, es decir, restando los exponentes. </p>
+                    <p class="lead pb-3 text-center" style="font-size: 2rem"><i>a<b class="text-secundarioTvioleta">x<sup>n</sup></b> / b<b class="text-secundarioTvioleta">x<sup>n</sup></b>=(a / b)<b class="text-secundarioTvioleta">x<sup>n - m</sup></b></i></p>
+                        <hr class="my-4">
+                        <p class="lead pb-3"><i>Ejemplo: </i></p>
+                        <img src="../img/ejemplomonomios1.png" alt="Imagen ejemplo monomios 1" width="10%"><br>
+                        <img src="../img/ejemplomonomios2.png" alt="Imagen ejemplo monomios 2" width="10%">
+                    </div>
+            </div>
+            </div> 
+             <div id="radicacion" class="py-3"> 
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2,3 rem; font-weight:300;">Radicación</h2>
+                        </div>
+                        <div class="w-100"></div>
+                      </div>
+                     </div>
+                     <div class="card-body p-5">
+                     <p class="lead pb-3">* Se extrae la raíz del signo</p>
+                    <p class="lead pb-3 " style="font-size: 2rem"><sup>3</sup>√<b class="text-success" >-</b></p>
+                    <p class="lead pb-3">* Extraer raíz del coeficiente </p>
+                    <p class="lead pb-3 " style="font-size: 2rem"><sup>3</sup>√<b class="text-success" >x</b></p>
+                    <p class="lead pb-3">* Se divide el exponente de cada letra entre el índice de la raíz.  </p>
+                    <p class="lead pb-3 " style="font-size: 2rem">x<sup><b class="text-success" >n/3</b></sup></p>
+                        <hr class="my-4">
+                        <p class="lead pb-3"><i>Ejemplo Radicación: </i></p>
+                        <h5 class="card-title">√(9a²b⁴)</h5>
+                        <h5 class="card-title">= √9a²<sup>/</sup>² b⁴<sup>/</sup>²</h5>
+                        <h5 class="card-title">± 3ab²
+                      </div>
+                      </div>
+            </div>
+            <div id="potencia" class="py-3"> 
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2,3 rem; font-weight:300;">Potenciación</h2>
+                        </div>
+                        <div class="w-100"></div>
+                      </div>
+                     </div>
+                     <div class="card-body p-5">
+                     <p class="lead pb-3">* Para realizar la potencia de un monomio se eleva, cada elemento de este, al exponente que indique la potencia.  </p>
+                    <p class="lead pb-3 " style="font-size: 2rem">(ax<sup class="text-warning">n</sup> )<sup class="text-warning">m</sup>=a<sup class="text-warning">n*m</sup> ∗ x<sup class="text-warning">n∗m</sup></sup></p>
+                        <hr class="my-4">
+                        <p class="lead pb-3"><i>Ejemplo Potenciación: </i></p>
+                        <h5 class="card-title">(2x³)³</h5>
+                        <h5 class="card-title">= 2³ · (x³)³</h5>
+                        <h5 class="card-title"> 8x<sup>9</sup>
+                      </div>
+                      </div>
+            </div>
+            </div>      
+            </div>
+            </div>
+            <div class="py-3 w-100"></div> <!-- nueva linea -->
+            
+        </div>
+    </div>
+    
+    <!--    *****************  ejercicio 1 preguntas educaplay 
+    <div class="container-fluid slider-n align-items-center justify-content-center text-white" style="background: #7cb139" id="ejercicio-EC1">
+        <div class="container h-100 pb-5">
+            <div class="row pt-md-5 pt-4 justify-content-center">
+                <div class="col-auto"></div>
+                <div class="col-xs-12 col-md-10">
+                    <h3>Práctiquemos lo aprendido</h3>
+                </div>
+                <div class="col-auto">1/2</div>
+            </div>
+            <div class="row py-4 py-md-3 py-lg-2 justify-content-center">
+                <div class="col-auto"></div>
+                <iframe width="795" height="600" frameborder="0" src="https://es.educaplay.com/es/recursoseducativos/4970570/html5/operaciones_con_numeros_entero.htm"></iframe>
+                <div class="col-auto"></div>
+            </div>
+        </div>
+      </div>
+-->
+    <script src="../js/cambiar-theme.js"></script>
+    <script>
+        $(".nav-link").css("color","rgba(255,255,255,0.9)");
+        
+        $('[data-scroll]').on('click', function(e){
+            scrollSeccion($(this).attr('href'));
+        });
+
+        function scrollSeccion(secFrame){
+            var posicion = $(secFrame).offset().top;
+            $("html, body").animate({
+                scrollTop: posicion
+            }, 2000); 
+        }
+    </script>
+</body>
+</html>

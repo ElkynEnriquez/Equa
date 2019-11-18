@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Etiquetas <meta> obligatorias para Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- titulo de página -->
+        <title>Unidad 2</title>
+        
+        <!-- ********************** Inicio codigo tema y cargar tema ******************* -->
+            <!-- Custom built theme - This already includes Bootstrap 4 
+            <link rel="stylesheet" href="../css/mytheme.min.css"> -->
+            <link rel="stylesheet" href="../css/tema-tesis.min.css">
+            <script src="../js/cargar-theme.js"></script>
+        <script>
+            function init() {
+                comprobarTheme();
+            }
+        </script>
+        <!-- *************************** Final codigo tema y cargar tema ********************-->
+
+        <!--************** Inicio Scripts Bootstrap y Cambio de tema ******************** -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <!-- Fin jQuery, Popper.js y Bootstrap JS -->
+        
+        <!-- incluimos iconos desde fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha387-lZN37f5QGtY3VHgigisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+<style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color:rgba(33,33,33,0.5);
+}
+</style>
+</head>
+<body style="margin:0px;" onload="init();" data-spy="scroll">
+    <nav class="navbar navbar-expand-lg navbar-light  bg-primary px-5 py-3">
+      <!-- Default dropright button -->
+        <div class="btn-group dropright">
+          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 30px;">
+            <i class="fa fa-palette text-primary px-2" style="font-size:24px;"></i>
+          </button>
+          <div class="dropdown-menu bg-primary">
+            <!-- Dropdown menu links -->
+                <a class="nav-link" id="change-theme-btn" href="#dark">Modo dark</a>
+                <a class="nav-link" id="color-azul-btn" href="#tema-azul">Azul</a>
+                <a class="nav-link" id="color-rojo-btn" href="#tema-rojo">Rojo</a>
+                <a class="nav-link" id="color-violeta-btn" href="#tema-violeta">Violeta</a>
+          </div>
+        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active px-2">
+            <a class="nav-link active" data-scroll href="#semejantes">Términos semejantes</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#jerarquia">Jerarquía de operaciones</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#valornumerico">Valor númerico</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" data-scroll href="#ejercicio-EC1">Ejercicios</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center py-5">
+            <div class="col-10 col-md-5 py-5">
+                <h1 class="display-4 text-primary pb-3">Unidad 2: Polinomios</h1>
+                <p>Expresión algebraica constituida por una suma finita de productos entre variables y coeficientes, o bien una sola variable</p>
+            </div>
+            <div class="w-100 d-md-none d-block"></div>
+            <div class="col-9 col-md-4 pt-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                   <video width="320" height="240" autoplay="true" loop muted>
+                      <source src="../img/personajes/estilo-teorico.mp4" type="video/mp4">
+                        Video personaje reflexivo, no soportado
+                    </video>
+                </div>
+                <p class="small text-center">Estilo teorico</p>
+            </div>
+        </div>
+        <div class="row py-3 justify-content-center">
+        <div class="col-md-10 col-12">
+            <div id="semejantes" class="py-3">
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2.3rem; font-weight:300;">Términos semejantes</h2>
+                        </div>
+                        <div class="w-100"></div>
+                    </div>
+                  </div>
+                  <div class="card-body p-5">
+                    <p class="lead">En una expresión algebraica se llaman términos semejantes a todos aquellos términos que tienen igual factor literal ; es decir, tienen iguales letras (símbolos literales) e iguales exponentes.</p><br>
+                    <p class="lead pb-3 text-center display-4 "> 6<b class="text-success">𝑎<sup>2</sup>𝑏<sup>3</sup> </b><i style="font-size: 1.2rem">semejante con</i> –2<b class="text-success">𝑎<sup>3</sup>𝑏<sup>3</sup> </b></p>
+                    <p class="lead pb-3 text-center display-4 "> <i style="font-size: 1.2rem">Mismo factor literal</i> (<b class="text-success">𝑎<sup>2</sup>𝑏<sup>3</sup> </b></sup>)</p>
+                    <hr class="my-4">
+                    
+                  </div>
+                </div>
+            </div>
+            <div id="jerarquia" class="py-3"> 
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2.3rem; font-weight:300;">Jerarquía de operaciones</h2>
+                        </div>
+                        <div class="w-100"></div>
+                         <div class="col-10 col-md-5 pt-3">
+                            <p class="lead">Es el orden en el que deben realizarse las operaciones aritméticas básicas.</p>
+                        </div>
+                          <div class="col-6 col-md-4">
+                       <p class="lead">Cuando una expresión aritmética involucra sumas, restas, multiplicaciones y/o divisiones.</p>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="card-body p-5">
+                      <p class="lead">1. Se realizan las operaciones que están entre paréntesis.</p><br>
+                      <h5 class="card-title" style="font-size: 1.5rem"><b class="card-title text-warning">(</b>x + 4<b class="card-title text-warning">)</b><sup>2</sup> + <b class="card-title text-warning">(</b>x + 3<b class="card-title text-warning">)</b><b class="card-title text-warning">(</b>x – 4<b class="card-title text-warning">)</b></h5><br>
+                     	<p class="lead">2. En seguida se realizan las potencias</p><br>
+                        <h5 class="card-title" style="font-size: 1.5rem">(x + 4)<sup class="text-warning">2</sup> + (x + 3)(x – 4)</h5><br>
+						<p class="lead"> 3. En tercer orden están las multiplicaciones y divisiones.</p><br>		
+                     	<h5 class="card-title" style="font-size: 1.5rem">(x<sup>2</sup> + 8x + 16) + (x + 3)<b class="text-warning">*</b>(x – 4)</h5><br>
+                     	<p class="lead">4. Para finalizar se realizan las sumas y restas.</p><br>
+                      <h5 class="card-title" style="font-size: 1.5rem">x<sup>2</sup> <b class="text-warning">+</b> 8x <b class="text-warning">+</b> 16 <b class="text-warning">+</b> x<sup>2</sup> <b class="text-warning">-</b> 4x <b class="text-warning">+</b> 3x <b class="text-warning">-</b> 12</h5><br>
+                     	<p class="lead">Resultado</p><br>
+						<h5 class="card-title" style="font-size: 1.5rem">2x<sup>2</sup> + 7x + 4 </h5><br>
+                      </div>
+            </div>
+            </div> 
+            <div id="valornumerico" class="py-3"> 
+                <div class="card">
+                  <div class="card-header bg-primary text-white align-center">
+                      <div class="row justify-content-center py-3">
+                        <div class="w-100"></div>
+                        <div class="col-10">
+                            <h2 class="py-3 px-4 text-center" style="font-size: 2,3 rem; font-weight:300;">Valor númerico de una expresión</h2>
+                        </div>
+                        <div class="w-100"></div>
+                      </div>
+                     </div>
+                     <div class="card-body p-5">
+                      <p class="lead">Se conoce con el nombre de Valor numérico de una Expresión algebraica a una operación elemental que consiste en decidir y asignar un valor numérico a una variable, representada por una letra, a fin de que la expresión pueda ser resuelta matemáticamente.</p><br>
+                     	<p class="lead"><i>Ejemplo</i></p>
+                     	<p class="lead">Determinar cuántas variables existente, y que posición ocupan.</p>
+                     	<h5 class="card-title" style="font-size: 1.5rem">P(x) = 7<b class="text-success">x</b> + 5 + 8<b class="text-success">x</b><sup>2</sup> +  <b class="text-success">x</b><sup>3</sup></h5><br>
+                     	<p class="lead">Reemplazar la variable, en este caso.</p>
+                     	<h5 class="card-title" style="font-size: 1.5rem"><b class="text-success">x</b> = 2</h5><br>
+                     	<p class="lead">Sustituir  las variables por ese número, encerrándolo entre paréntesis </p>
+                     	<h5 class="card-title" style="font-size: 1.5rem">P(x) = 7<b class="text-success">(</b>2<b class="text-success">)</b> + 5 + 8<b class="text-success">(</b>2<b class="text-success">)</b><sup>2</sup> +  <b class="text-success">(</b>2<b class="text-success">)</b><sup>3</sup></h5><br>
+                     	<p class="lead">Resolver las operaciones que estén dentro del paréntesis </p>
+                     	<h5 class="card-title" style="font-size: 1.5rem">P(<sub>2</sub>) = 7(<b class="text-success">2</b>) + 5 + 8(<b class="text-success">4</b>) +  (<b class="text-success">8</b>)</h5><br>
+                     	<p class="lead">Multiplicar los coeficientes por el resultado contenido entre los paréntesis: </p>
+                     	<h5 class="card-title" style="font-size: 1.5rem">P(<sub>2</sub>) = <b class="text-success">14</b> + <b class="text-success">5</b> + <b class="text-success">32</b> + <b class="text-success">8</b></h5><br>
+                     	<p class="lead">Resultado </p>
+                     	<h5 class="card-title" style="font-size: 1.5rem">P(<sub>2</sub>) = 59</h5><br>
+                        </div>
+            </div>
+            </div>       
+            </div>
+            </div>
+            <div class="py-3 w-100"></div> <!-- nueva linea -->
+            
+        </div>
+    </div>
+    
+    <!--    *****************  ejercicio 1 preguntas educaplay 
+    <div class="container-fluid slider-n align-items-center justify-content-center text-white" style="background: #7cb139" id="ejercicio-EC1">
+        <div class="container h-100 pb-5">
+            <div class="row pt-md-5 pt-4 justify-content-center">
+                <div class="col-auto"></div>
+                <div class="col-xs-12 col-md-10">
+                    <h3>Práctiquemos lo aprendido</h3>
+                </div>
+                <div class="col-auto">1/2</div>
+            </div>
+            <div class="row py-4 py-md-3 py-lg-2 justify-content-center">
+                <div class="col-auto"></div>
+                <iframe width="795" height="600" frameborder="0" src="https://es.educaplay.com/es/recursoseducativos/4970570/html5/operaciones_con_numeros_entero.htm"></iframe>
+                <div class="col-auto"></div>
+            </div>
+        </div>
+      </div>-->
+    <script src="../js/cambiar-theme.js"></script>
+    <script>
+        $(".nav-link").css("color","rgba(255,255,255,0.9)");
+        
+        $('[data-scroll]').on('click', function(e){
+            scrollSeccion($(this).attr('href'));
+        });
+
+        function scrollSeccion(secFrame){
+            var posicion = $(secFrame).offset().top;
+            $("html, body").animate({
+                scrollTop: posicion
+            }, 2000); 
+        }
+    </script>
+</body>
+</html>
